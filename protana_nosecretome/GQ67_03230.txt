@@ -1,0 +1,6 @@
+molecularweight : 11114.777699999982
+pI : 10.346547126770016
+netcharge : 5.769209876365036
+aromaticity : 0.05
+gravy : -0.17200000000000013
+instability : 67.008
