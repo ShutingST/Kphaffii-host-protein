@@ -1,0 +1,1316 @@
+<html><head><title>Prediction of "hot spots" of aggregation in disease-linked polypeptides</title></head>
+<body>
+<script language="JavaScript"></script>
+<style type="text/css">
+ .color1 {
+background-color: cbc5c5;
+}
+ .color2 {
+background-color: FFFFFF;
+}
+</style>
+<br>
+<table>
+<tbody>
+<tr>
+<td style="vertical-align: top; white-space: nowrap;">
+<table border="0">
+<tbody>
+<tr>
+<td style="text-align: right; height: 27px; white-space: nowrap;">
+<a href="javascript:void(null);" onclick="window.open('/aap/aap_help.html#seqname','aap_help','resizable=yes,scrollbars=yes,width=600,height=800');"><img src="/aap/imatges/question_mark.png" border="0"></a></td>
+<td style="text-align: right; white-space: nowrap;">
+<small><small>Sequence Name:
+</small></small></td>
+</tr>
+<tr>
+<td style="text-align: right; height: 45px; white-space: nowrap;">
+<a href="javascript:void(null);" onclick="window.open('/aap/aap_help.html#graph','aap_help','resizable=yes,scrollbars=yes,width=600,height=800');"><img src="/aap/imatges/question_mark.png" border="0"></a></td>
+<td style="text-align: right; white-space: nowrap;">
+<small><small>Graphics:<p>
+</p></small></small></td>
+</tr>
+<tr>
+<td style="text-align: right; height: 27px; white-space: nowrap;">
+<a href="javascript:void(null);" onclick="window.open('/aap/aap_help.html#seqaap','aap_help','resizable=yes,scrollbars=yes,width=600,height=800');"><img src="/aap/imatges/question_mark.png" border="0"></a></td>
+<td style="text-align: right; white-space: nowrap;">
+<small><small>a3v Sequence Average (a3vSA):
+</small></small></td>
+</tr>
+<tr>
+<td style="text-align: right; height: 27px; white-space: nowrap;">
+<a href="javascript:void(null);" onclick="window.open('/aap/aap_help.html#hsnum','aap_help','resizable=yes,scrollbars=yes,width=600,height=800');"><img src="/aap/imatges/question_mark.png" border="0"></a></td>
+<td style="text-align: right; white-space: nowrap;">
+<small><small>Number of Hot Spots (nHS):
+</small></small></td>
+</tr>
+<tr>
+<td style="text-align: right; height: 27px; white-space: nowrap;">
+<a href="javascript:void(null);" onclick="window.open('/aap/aap_help.html#hsdiv','aap_help','resizable=yes,scrollbars=yes,width=600,height=800');"><img src="/aap/imatges/question_mark.png" border="0"></a></td>
+<td style="text-align: right; white-space: nowrap;">
+<small><small>Normalized nHS for 100 residues (NnHS):
+</small></small></td>
+</tr>
+<tr>
+<td style="text-align: right; height: 27px; white-space: nowrap;">
+<a href="javascript:void(null);" onclick="window.open('/aap/aap_help.html#aot','aap_help','resizable=yes,scrollbars=yes,width=600,height=800');"><img src="/aap/imatges/question_mark.png" border="0"></a></td>
+<td style="text-align: right; white-space: nowrap;">
+<small><small>Area of the profile Above Threshold (AAT): 
+</small></small></td>
+</tr>
+<tr>
+<td style="text-align: right; height: 27px; white-space: nowrap;">
+<a href="javascript:void(null);" onclick="window.open('/aap/aap_help.html#aohs','aap_help','resizable=yes,scrollbars=yes,width=600,height=800');"><img src="/aap/imatges/question_mark.png" border="0"></a></td>
+<td style="text-align: right; white-space: nowrap;">
+<small><small>Total Hot Spot Area (THSA): 
+</small></small></td>
+</tr>
+<tr>
+<td style="text-align: right; height: 27px; white-space: nowrap;">
+<a href="javascript:void(null);" onclick="window.open('/aap/aap_help.html#atot','aap_help','resizable=yes,scrollbars=yes,width=600,height=800');"><img src="/aap/imatges/question_mark.png" border="0"></a></td>
+<td style="text-align: right; white-space: nowrap;">
+<small><small>Total Area (TA): 
+</small></small></td>
+</tr>
+<tr>
+<td style="text-align: right; height: 27px; white-space: nowrap;">
+<a href="javascript:void(null);" onclick="window.open('/aap/aap_help.html#aotdiv','aap_help','resizable=yes,scrollbars=yes,width=600,height=800');"><img src="/aap/imatges/question_mark.png" border="0"></a></td>
+<td style="text-align: right; white-space: nowrap;">
+<small><small>AAT per residue (AATr): 
+</small></small></td>
+</tr>
+<tr>
+<td style="text-align: right; height: 27px; white-space: nowrap;">
+<a href="javascript:void(null);" onclick="window.open('/aap/aap_help.html#aohsdiv','aap_help','resizable=yes,scrollbars=yes,width=600,height=800');"><img src="/aap/imatges/question_mark.png" border="0"></a></td>
+<td style="text-align: right; white-space: nowrap;">
+<small><small>THSA per residue (THSAr): 
+</small></small></td>
+</tr>
+<tr>
+<td style="text-align: right; height: 27px; white-space: nowrap;">
+<a href="javascript:void(null);" onclick="window.open('/aap/aap_help.html#profav','aap_help','resizable=yes,scrollbars=yes,width=600,height=800');"><img src="/aap/imatges/question_mark.png" border="0"></a></td>
+<td style="text-align: right; height: 27px; white-space: nowrap;">
+<small><small>Normalized a4v Sequence Sum for 100 residues (Na4vSS): 
+</small></small></td>
+</tr>
+</tbody></table></td><td style="vertical-align: top;">
+<table border="0">
+<tbody>
+<tr>
+<td style="text-align: center; height: 27px;" colspan="5" rowspan="1">
+GQ67_00001<br>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; height: 45px;" colspan="5" rowspan="1"><a href="javascript:void(null);" onclick="window.open('http://bioinf.uab.es/aap/1654195506/aap_1654195506_0.gif','aap_1654195506_0','resizable=yes,scrollbars=yes,width=600,height=440');"><img alt="" src="http://bioinf.uab.es/aap/imatges/gnuplot_P.png"></a>
+&nbsp;<a href="javascript:void(null);" onclick="window.open('http://bioinf.uab.es/aap/1654195506/area_1654195506_0.gif','area_1654195506_0','resizable=yes,scrollbars=yes,width=600,height=440');"><img alt="" src="http://bioinf.uab.es/aap/imatges/gnuplot_A.png"></a>
+&nbsp;<a href="javascript:void(null);" onclick="window.open('http://bioinf.uab.es/aap/1654195506/ad_1654195506_0.gif','ad_1654195506_0','resizable=yes,scrollbars=yes,width=600,height=440');"><img alt="" src="http://bioinf.uab.es/aap/imatges/gnuplot_AD.png"></a>
+
+</td>
+</tr><tr>
+<td style="text-align: center; height: 27px;" colspan="5" rowspan="1">-0.037<br>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; height: 27px;" colspan="5" rowspan="1">6<br>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; height: 27px;" colspan="5" rowspan="1"> 3.315<br>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; height: 27px;" colspan="5" rowspan="1">26.418<br>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; height: 27px;" colspan="5" rowspan="1">22.886<br>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; height: 27px;" colspan="5" rowspan="1">-4.511<br>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; height: 27px;" colspan="5" rowspan="1"> 0.146<br>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; height: 27px;" colspan="5" rowspan="1"> 0.126<br>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; height: 27px;" colspan="5" rowspan="1">-4.6<br>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;"><small><small>#</small></small></td>
+<td style="text-align: center;"><small><small><a href="javascript:void(null);" onclick="window.open('/aap/aap_help.html#aa','aap_help','resizable=yes,scrollbars=yes,width=600,height=800');">AA</a></small></small></td>
+<td style="text-align: center;"><small><small><a href="javascript:void(null);" onclick="window.open('/aap/aap_help.html#aap','aap_help','resizable=yes,scrollbars=yes,width=600,height=800');">a4v</a></small></small></td>
+<td style="text-align: center;"><small><small><a href="javascript:void(null);" onclick="window.open('/aap/aap_help.html#regarea','aap_help','resizable=yes,scrollbars=yes,width=600,height=800');">HSA</a></small></small></td>
+<td style="text-align: center;"><small><small><a href="javascript:void(null);" onclick="window.open('/aap/aap_help.html#areadiv','aap_help','resizable=yes,scrollbars=yes,width=600,height=800');">NHSA</a></small></small></td>
+<td style="text-align: center;"><small><small><a href="javascript:void(null);" onclick="window.open('/aap/aap_help.html#prfaver','aap_help','resizable=yes,scrollbars=yes,width=600,height=800');">a4vAHS</a>
+</small></small></td>
+</tr>
+<tr>
+<td style=" vertical-align: top; text-align: right; white-space: nowrap;"><small><span class="color2">1</span><br>
+<span class="color1">2</span><br>
+<span class="color2">3</span><br>
+<span class="color1">4</span><br>
+<span class="color2">5</span><br>
+<span class="color1">6</span><br>
+<span class="color2">7</span><br>
+<span class="color1">8</span><br>
+<span class="color2">9</span><br>
+<span class="color1">10</span><br>
+<span class="color2">11</span><br>
+<span class="color1">12</span><br>
+<span class="color2">13</span><br>
+<span class="color1">14</span><br>
+<span class="color2">15</span><br>
+<span class="color1">16</span><br>
+<span class="color2">17</span><br>
+<span class="color1">18</span><br>
+<span class="color2">19</span><br>
+<span class="color1">20</span><br>
+<span class="color2">21</span><br>
+<span class="color1">22</span><br>
+<span class="color2">23</span><br>
+<span class="color1">24</span><br>
+<span class="color2">25</span><br>
+<span class="color1">26</span><br>
+<span class="color2">27</span><br>
+<span class="color1"><font color="red">28</font></span><br>
+<span class="color2"><font color="red">29</font></span><br>
+<span class="color1"><font color="red">30</font></span><br>
+<span class="color2"><font color="red">31</font></span><br>
+<span class="color1"><font color="red">32</font></span><br>
+<span class="color2"><font color="red">33</font></span><br>
+<span class="color1"><font color="red">34</font></span><br>
+<span class="color2">35</span><br>
+<span class="color1">36</span><br>
+<span class="color2">37</span><br>
+<span class="color1">38</span><br>
+<span class="color2">39</span><br>
+<span class="color1">40</span><br>
+<span class="color2">41</span><br>
+<span class="color1">42</span><br>
+<span class="color2">43</span><br>
+<span class="color1">44</span><br>
+<span class="color2">45</span><br>
+<span class="color1">46</span><br>
+<span class="color2">47</span><br>
+<span class="color1">48</span><br>
+<span class="color2">49</span><br>
+<span class="color1">50</span><br>
+<span class="color2">51</span><br>
+<span class="color1">52</span><br>
+<span class="color2">53</span><br>
+<span class="color1">54</span><br>
+<span class="color2">55</span><br>
+<span class="color1">56</span><br>
+<span class="color2">57</span><br>
+<span class="color1">58</span><br>
+<span class="color2">59</span><br>
+<span class="color1">60</span><br>
+<span class="color2">61</span><br>
+<span class="color1">62</span><br>
+<span class="color2">63</span><br>
+<span class="color1">64</span><br>
+<span class="color2">65</span><br>
+<span class="color1">66</span><br>
+<span class="color2">67</span><br>
+<span class="color1">68</span><br>
+<span class="color2">69</span><br>
+<span class="color1">70</span><br>
+<span class="color2">71</span><br>
+<span class="color1">72</span><br>
+<span class="color2">73</span><br>
+<span class="color1">74</span><br>
+<span class="color2">75</span><br>
+<span class="color1">76</span><br>
+<span class="color2">77</span><br>
+<span class="color1">78</span><br>
+<span class="color2">79</span><br>
+<span class="color1"><font color="red">80</font></span><br>
+<span class="color2"><font color="red">81</font></span><br>
+<span class="color1"><font color="red">82</font></span><br>
+<span class="color2"><font color="red">83</font></span><br>
+<span class="color1"><font color="red">84</font></span><br>
+<span class="color2"><font color="red">85</font></span><br>
+<span class="color1"><font color="red">86</font></span><br>
+<span class="color2"><font color="red">87</font></span><br>
+<span class="color1"><font color="red">88</font></span><br>
+<span class="color2"><font color="red">89</font></span><br>
+<span class="color1"><font color="red">90</font></span><br>
+<span class="color2"><font color="red">91</font></span><br>
+<span class="color1"><font color="red">92</font></span><br>
+<span class="color2"><font color="red">93</font></span><br>
+<span class="color1"><font color="red">94</font></span><br>
+<span class="color2">95</span><br>
+<span class="color1">96</span><br>
+<span class="color2">97</span><br>
+<span class="color1">98</span><br>
+<span class="color2">99</span><br>
+<span class="color1">100</span><br>
+<span class="color2">101</span><br>
+<span class="color1">102</span><br>
+<span class="color2">103</span><br>
+<span class="color1">104</span><br>
+<span class="color2">105</span><br>
+<span class="color1">106</span><br>
+<span class="color2">107</span><br>
+<span class="color1">108</span><br>
+<span class="color2">109</span><br>
+<span class="color1">110</span><br>
+<span class="color2">111</span><br>
+<span class="color1">112</span><br>
+<span class="color2">113</span><br>
+<span class="color1">114</span><br>
+<span class="color2">115</span><br>
+<span class="color1">116</span><br>
+<span class="color2">117</span><br>
+<span class="color1">118</span><br>
+<span class="color2">119</span><br>
+<span class="color1">120</span><br>
+<span class="color2">121</span><br>
+<span class="color1">122</span><br>
+<span class="color2">123</span><br>
+<span class="color1">124</span><br>
+<span class="color2">125</span><br>
+<span class="color1">126</span><br>
+<span class="color2">127</span><br>
+<span class="color1">128</span><br>
+<span class="color2">129</span><br>
+<span class="color1"><font color="red">130</font></span><br>
+<span class="color2"><font color="red">131</font></span><br>
+<span class="color1"><font color="red">132</font></span><br>
+<span class="color2"><font color="red">133</font></span><br>
+<span class="color1"><font color="red">134</font></span><br>
+<span class="color2"><font color="red">135</font></span><br>
+<span class="color1"><font color="red">136</font></span><br>
+<span class="color2"><font color="red">137</font></span><br>
+<span class="color1"><font color="red">138</font></span><br>
+<span class="color2"><font color="red">139</font></span><br>
+<span class="color1"><font color="red">140</font></span><br>
+<span class="color2"><font color="red">141</font></span><br>
+<span class="color1"><font color="red">142</font></span><br>
+<span class="color2"><font color="red">143</font></span><br>
+<span class="color1"><font color="red">144</font></span><br>
+<span class="color2">145</span><br>
+<span class="color1">146</span><br>
+<span class="color2"><font color="red">147</font></span><br>
+<span class="color1"><font color="red">148</font></span><br>
+<span class="color2"><font color="red">149</font></span><br>
+<span class="color1"><font color="red">150</font></span><br>
+<span class="color2"><font color="red">151</font></span><br>
+<span class="color1"><font color="red">152</font></span><br>
+<span class="color2"><font color="red">153</font></span><br>
+<span class="color1"><font color="red">154</font></span><br>
+<span class="color2">155</span><br>
+<span class="color1">156</span><br>
+<span class="color2"><font color="red">157</font></span><br>
+<span class="color1"><font color="red">158</font></span><br>
+<span class="color2"><font color="red">159</font></span><br>
+<span class="color1"><font color="red">160</font></span><br>
+<span class="color2"><font color="red">161</font></span><br>
+<span class="color1"><font color="red">162</font></span><br>
+<span class="color2"><font color="red">163</font></span><br>
+<span class="color1"><font color="red">164</font></span><br>
+<span class="color2"><font color="red">165</font></span><br>
+<span class="color1"><font color="red">166</font></span><br>
+<span class="color2"><font color="red">167</font></span><br>
+<span class="color1"><font color="red">168</font></span><br>
+<span class="color2">169</span><br>
+<span class="color1">170</span><br>
+<span class="color2">171</span><br>
+<span class="color1"><font color="red">172</font></span><br>
+<span class="color2"><font color="red">173</font></span><br>
+<span class="color1"><font color="red">174</font></span><br>
+<span class="color2"><font color="red">175</font></span><br>
+<span class="color1"><font color="red">176</font></span><br>
+<span class="color2"><font color="red">177</font></span><br>
+<span class="color1"><font color="red">178</font></span><br>
+<span class="color2"><font color="red">179</font></span><br>
+<span class="color1"><font color="red">180</font></span><br>
+<span class="color2"><font color="red">181</font></span><br>
+</small></td>
+<td style=" vertical-align: top; text-align: right; white-space: nowrap;"><small><span class="color2">F</span><br>
+<span class="color1">N</span><br>
+<span class="color2">R</span><br>
+<span class="color1">K</span><br>
+<span class="color2">D</span><br>
+<span class="color1">V</span><br>
+<span class="color2">R</span><br>
+<span class="color1">D</span><br>
+<span class="color2">R</span><br>
+<span class="color1">H</span><br>
+<span class="color2">Y</span><br>
+<span class="color1">R</span><br>
+<span class="color2">R</span><br>
+<span class="color1">H</span><br>
+<span class="color2">A</span><br>
+<span class="color1">A</span><br>
+<span class="color2">D</span><br>
+<span class="color1">I</span><br>
+<span class="color2">S</span><br>
+<span class="color1">D</span><br>
+<span class="color2">N</span><br>
+<span class="color1">S</span><br>
+<span class="color2">L</span><br>
+<span class="color1">G</span><br>
+<span class="color2">S</span><br>
+<span class="color1">G</span><br>
+<span class="color2">P</span><br>
+<span class="color1"><font color="red">H</font></span><br>
+<span class="color2"><font color="red">T</font></span><br>
+<span class="color1"><font color="red">I</font></span><br>
+<span class="color2"><font color="red">S</font></span><br>
+<span class="color1"><font color="red">I</font></span><br>
+<span class="color2"><font color="red">V</font></span><br>
+<span class="color1"><font color="red">G</font></span><br>
+<span class="color2">K</span><br>
+<span class="color1">R</span><br>
+<span class="color2">T</span><br>
+<span class="color1">D</span><br>
+<span class="color2">E</span><br>
+<span class="color1">N</span><br>
+<span class="color2">T</span><br>
+<span class="color1">N</span><br>
+<span class="color2">P</span><br>
+<span class="color1">I</span><br>
+<span class="color2">E</span><br>
+<span class="color1">A</span><br>
+<span class="color2">Q</span><br>
+<span class="color1">S</span><br>
+<span class="color2">I</span><br>
+<span class="color1">E</span><br>
+<span class="color2">S</span><br>
+<span class="color1">L</span><br>
+<span class="color2">E</span><br>
+<span class="color1">L</span><br>
+<span class="color2">M</span><br>
+<span class="color1">S</span><br>
+<span class="color2">S</span><br>
+<span class="color1">T</span><br>
+<span class="color2">P</span><br>
+<span class="color1">L</span><br>
+<span class="color2">T</span><br>
+<span class="color1">P</span><br>
+<span class="color2">K</span><br>
+<span class="color1">S</span><br>
+<span class="color2">I</span><br>
+<span class="color1">T</span><br>
+<span class="color2">Y</span><br>
+<span class="color1">S</span><br>
+<span class="color2">T</span><br>
+<span class="color1">Q</span><br>
+<span class="color2">K</span><br>
+<span class="color1">Q</span><br>
+<span class="color2">Y</span><br>
+<span class="color1">H</span><br>
+<span class="color2">V</span><br>
+<span class="color1">V</span><br>
+<span class="color2">Q</span><br>
+<span class="color1">T</span><br>
+<span class="color2">P</span><br>
+<span class="color1"><font color="red">K</font></span><br>
+<span class="color2"><font color="red">F</font></span><br>
+<span class="color1"><font color="red">I</font></span><br>
+<span class="color2"><font color="red">L</font></span><br>
+<span class="color1"><font color="red">G</font></span><br>
+<span class="color2"><font color="red">N</font></span><br>
+<span class="color1"><font color="red">L</font></span><br>
+<span class="color2"><font color="red">I</font></span><br>
+<span class="color1"><font color="red">C</font></span><br>
+<span class="color2"><font color="red">T</font></span><br>
+<span class="color1"><font color="red">G</font></span><br>
+<span class="color2"><font color="red">R</font></span><br>
+<span class="color1"><font color="red">I</font></span><br>
+<span class="color2"><font color="red">F</font></span><br>
+<span class="color1"><font color="red">G</font></span><br>
+<span class="color2">I</span><br>
+<span class="color1">N</span><br>
+<span class="color2">G</span><br>
+<span class="color1">R</span><br>
+<span class="color2">K</span><br>
+<span class="color1">G</span><br>
+<span class="color2">S</span><br>
+<span class="color1">I</span><br>
+<span class="color2">P</span><br>
+<span class="color1">Q</span><br>
+<span class="color2">T</span><br>
+<span class="color1">T</span><br>
+<span class="color2">T</span><br>
+<span class="color1">D</span><br>
+<span class="color2">Q</span><br>
+<span class="color1">T</span><br>
+<span class="color2">H</span><br>
+<span class="color1">H</span><br>
+<span class="color2">A</span><br>
+<span class="color1">I</span><br>
+<span class="color2">R</span><br>
+<span class="color1">N</span><br>
+<span class="color2">V</span><br>
+<span class="color1">C</span><br>
+<span class="color2">D</span><br>
+<span class="color1">V</span><br>
+<span class="color2">L</span><br>
+<span class="color1">R</span><br>
+<span class="color2">E</span><br>
+<span class="color1">A</span><br>
+<span class="color2">K</span><br>
+<span class="color1">A</span><br>
+<span class="color2">S</span><br>
+<span class="color1">L</span><br>
+<span class="color2">D</span><br>
+<span class="color1"><font color="red">E</font></span><br>
+<span class="color2"><font color="red">V</font></span><br>
+<span class="color1"><font color="red">I</font></span><br>
+<span class="color2"><font color="red">R</font></span><br>
+<span class="color1"><font color="red">V</font></span><br>
+<span class="color2"><font color="red">S</font></span><br>
+<span class="color1"><font color="red">V</font></span><br>
+<span class="color2"><font color="red">F</font></span><br>
+<span class="color1"><font color="red">L</font></span><br>
+<span class="color2"><font color="red">V</font></span><br>
+<span class="color1"><font color="red">C</font></span><br>
+<span class="color2"><font color="red">L</font></span><br>
+<span class="color1"><font color="red">E</font></span><br>
+<span class="color2"><font color="red">E</font></span><br>
+<span class="color1"><font color="red">C</font></span><br>
+<span class="color2">T</span><br>
+<span class="color1">A</span><br>
+<span class="color2"><font color="red">V</font></span><br>
+<span class="color1"><font color="red">Q</font></span><br>
+<span class="color2"><font color="red">S</font></span><br>
+<span class="color1"><font color="red">I</font></span><br>
+<span class="color2"><font color="red">C</font></span><br>
+<span class="color1"><font color="red">S</font></span><br>
+<span class="color2"><font color="red">Q</font></span><br>
+<span class="color1"><font color="red">Y</font></span><br>
+<span class="color2">F</span><br>
+<span class="color1">P</span><br>
+<span class="color2"><font color="red">D</font></span><br>
+<span class="color1"><font color="red">G</font></span><br>
+<span class="color2"><font color="red">A</font></span><br>
+<span class="color1"><font color="red">V</font></span><br>
+<span class="color2"><font color="red">Y</font></span><br>
+<span class="color1"><font color="red">D</font></span><br>
+<span class="color2"><font color="red">F</font></span><br>
+<span class="color1"><font color="red">I</font></span><br>
+<span class="color2"><font color="red">H</font></span><br>
+<span class="color1"><font color="red">I</font></span><br>
+<span class="color2"><font color="red">K</font></span><br>
+<span class="color1"><font color="red">F</font></span><br>
+<span class="color2">S</span><br>
+<span class="color1">P</span><br>
+<span class="color2">G</span><br>
+<span class="color1"><font color="red">N</font></span><br>
+<span class="color2"><font color="red">A</font></span><br>
+<span class="color1"><font color="red">L</font></span><br>
+<span class="color2"><font color="red">G</font></span><br>
+<span class="color1"><font color="red">A</font></span><br>
+<span class="color2"><font color="red">I</font></span><br>
+<span class="color1"><font color="red">A</font></span><br>
+<span class="color2"><font color="red">S</font></span><br>
+<span class="color1"><font color="red">G</font></span><br>
+<span class="color2"><font color="red">W</font></span><br>
+</small></td>
+<td style=" vertical-align: top; text-align: right; white-space: nowrap;"><small><span class="color2">-0.740</span><br>
+<span class="color1">-0.740</span><br>
+<span class="color2">-0.740</span><br>
+<span class="color1">-0.740</span><br>
+<span class="color2">-0.697</span><br>
+<span class="color1">-1.007</span><br>
+<span class="color2">-0.734</span><br>
+<span class="color1">-0.734</span><br>
+<span class="color2">-0.768</span><br>
+<span class="color1">-0.679</span><br>
+<span class="color2">-0.860</span><br>
+<span class="color1">-0.726</span><br>
+<span class="color2">-0.726</span><br>
+<span class="color1">-0.386</span><br>
+<span class="color2">-0.304</span><br>
+<span class="color1">-0.637</span><br>
+<span class="color2">-0.643</span><br>
+<span class="color1">-0.538</span><br>
+<span class="color2">-0.270</span><br>
+<span class="color1">-0.326</span><br>
+<span class="color2">-0.354</span><br>
+<span class="color1">-0.210</span><br>
+<span class="color2">-0.449</span><br>
+<span class="color1">-0.531</span><br>
+<span class="color2">-0.345</span><br>
+<span class="color1"> 0.002</span><br>
+<span class="color2"> 0.002</span><br>
+<span class="color1"><font color="red"> 0.051</font></span><br>
+<span class="color2"><font color="red"> 0.288</font></span><br>
+<span class="color1"><font color="red"> 0.261</font></span><br>
+<span class="color2"><font color="red"> 0.217</font></span><br>
+<span class="color1"><font color="red"> 0.116</font></span><br>
+<span class="color2"><font color="red"> 0.213</font></span><br>
+<span class="color1"><font color="red"> 0.027</font></span><br>
+<span class="color2">-0.332</span><br>
+<span class="color1">-0.444</span><br>
+<span class="color2">-0.664</span><br>
+<span class="color1">-0.986</span><br>
+<span class="color2">-0.964</span><br>
+<span class="color1">-0.658</span><br>
+<span class="color2">-0.677</span><br>
+<span class="color1">-0.663</span><br>
+<span class="color2">-0.596</span><br>
+<span class="color1">-0.472</span><br>
+<span class="color2">-0.125</span><br>
+<span class="color1">-0.264</span><br>
+<span class="color2">-0.152</span><br>
+<span class="color1"> 0.038</span><br>
+<span class="color2">-0.321</span><br>
+<span class="color1">-0.011</span><br>
+<span class="color2"> 0.094</span><br>
+<span class="color1"> 0.198</span><br>
+<span class="color2"> 0.198</span><br>
+<span class="color1">-0.022</span><br>
+<span class="color2"> 0.098</span><br>
+<span class="color1"> 0.284</span><br>
+<span class="color2"> 0.113</span><br>
+<span class="color1"> 0.233</span><br>
+<span class="color2">-0.024</span><br>
+<span class="color1">-0.158</span><br>
+<span class="color2"> 0.077</span><br>
+<span class="color1"> 0.092</span><br>
+<span class="color2"> 0.239</span><br>
+<span class="color1"> 0.243</span><br>
+<span class="color2"> 0.072</span><br>
+<span class="color1">-0.047</span><br>
+<span class="color2">-0.113</span><br>
+<span class="color1">-0.146</span><br>
+<span class="color2"> 0.015</span><br>
+<span class="color1">-0.302</span><br>
+<span class="color2">-0.107</span><br>
+<span class="color1">-0.059</span><br>
+<span class="color2">-0.163</span><br>
+<span class="color1">-0.163</span><br>
+<span class="color2">-0.064</span><br>
+<span class="color1">-0.064</span><br>
+<span class="color2"> 0.268</span><br>
+<span class="color1"> 0.342</span><br>
+<span class="color2"> 0.610</span><br>
+<span class="color1"><font color="red"> 0.373</font></span><br>
+<span class="color2"><font color="red"> 0.052</font></span><br>
+<span class="color1"><font color="red"> 0.342</font></span><br>
+<span class="color2"><font color="red"> 0.562</font></span><br>
+<span class="color1"><font color="red"> 0.666</font></span><br>
+<span class="color2"><font color="red"> 0.752</font></span><br>
+<span class="color1"><font color="red"> 0.497</font></span><br>
+<span class="color2"><font color="red"> 0.157</font></span><br>
+<span class="color1"><font color="red"> 0.206</font></span><br>
+<span class="color2"><font color="red"> 0.461</font></span><br>
+<span class="color1"><font color="red"> 0.546</font></span><br>
+<span class="color2"><font color="red"> 0.595</font></span><br>
+<span class="color1"><font color="red"> 0.248</font></span><br>
+<span class="color2"><font color="red"> 0.121</font></span><br>
+<span class="color1"><font color="red"> 0.001</font></span><br>
+<span class="color2">-0.043</span><br>
+<span class="color1"> 0.036</span><br>
+<span class="color2">-0.200</span><br>
+<span class="color1">-0.192</span><br>
+<span class="color2">-0.170</span><br>
+<span class="color1">-0.509</span><br>
+<span class="color2">-0.382</span><br>
+<span class="color1">-0.340</span><br>
+<span class="color2">-0.220</span><br>
+<span class="color1">-0.321</span><br>
+<span class="color2">-0.398</span><br>
+<span class="color1">-0.383</span><br>
+<span class="color2">-0.700</span><br>
+<span class="color1">-0.778</span><br>
+<span class="color2">-0.645</span><br>
+<span class="color1">-0.425</span><br>
+<span class="color2">-0.545</span><br>
+<span class="color1">-0.672</span><br>
+<span class="color2">-0.291</span><br>
+<span class="color1">-0.087</span><br>
+<span class="color2">-0.273</span><br>
+<span class="color1"> 0.019</span><br>
+<span class="color2"> 0.287</span><br>
+<span class="color1"> 0.153</span><br>
+<span class="color2">-0.206</span><br>
+<span class="color1">-0.073</span><br>
+<span class="color2">-0.031</span><br>
+<span class="color1">-0.213</span><br>
+<span class="color2">-0.312</span><br>
+<span class="color1"> 0.045</span><br>
+<span class="color2">-0.336</span><br>
+<span class="color1">-0.646</span><br>
+<span class="color2">-0.331</span><br>
+<span class="color1"> 0.028</span><br>
+<span class="color2">-0.106</span><br>
+<span class="color1"><font color="red"> 0.175</font></span><br>
+<span class="color2"><font color="red"> 0.146</font></span><br>
+<span class="color1"><font color="red"> 0.356</font></span><br>
+<span class="color2"><font color="red"> 0.397</font></span><br>
+<span class="color1"><font color="red"> 0.755</font></span><br>
+<span class="color2"><font color="red"> 1.089</font></span><br>
+<span class="color1"><font color="red"> 0.979</font></span><br>
+<span class="color2"><font color="red"> 0.930</font></span><br>
+<span class="color1"><font color="red"> 0.910</font></span><br>
+<span class="color2"><font color="red"> 0.576</font></span><br>
+<span class="color1"><font color="red"> 0.676</font></span><br>
+<span class="color2"><font color="red"> 0.481</font></span><br>
+<span class="color1"><font color="red"> 0.283</font></span><br>
+<span class="color2"><font color="red"> 0.306</font></span><br>
+<span class="color1"><font color="red">-0.008</font></span><br>
+<span class="color2">-0.107</span><br>
+<span class="color1">-0.058</span><br>
+<span class="color2"><font color="red"> 0.166</font></span><br>
+<span class="color1"><font color="red"> 0.290</font></span><br>
+<span class="color2"><font color="red"> 0.086</font></span><br>
+<span class="color1"><font color="red"> 0.233</font></span><br>
+<span class="color2"><font color="red"> 0.431</font></span><br>
+<span class="color1"><font color="red"> 0.217</font></span><br>
+<span class="color2"><font color="red"> 0.150</font></span><br>
+<span class="color1"><font color="red"> 0.123</font></span><br>
+<span class="color2">-0.083</span><br>
+<span class="color1"> 0.027</span><br>
+<span class="color2"><font color="red"> 0.188</font></span><br>
+<span class="color1"><font color="red"> 0.121</font></span><br>
+<span class="color2"><font color="red"> 0.187</font></span><br>
+<span class="color1"><font color="red"> 0.195</font></span><br>
+<span class="color2"><font color="red"> 0.117</font></span><br>
+<span class="color1"><font color="red"> 0.523</font></span><br>
+<span class="color2"><font color="red"> 0.479</font></span><br>
+<span class="color1"><font color="red"> 0.678</font></span><br>
+<span class="color2"><font color="red"> 0.469</font></span><br>
+<span class="color1"><font color="red"> 0.303</font></span><br>
+<span class="color2"><font color="red"> 0.447</font></span><br>
+<span class="color1"><font color="red"> 0.108</font></span><br>
+<span class="color2">-0.099</span><br>
+<span class="color1"> 0.169</span><br>
+<span class="color2">-0.093</span><br>
+<span class="color1"><font color="red"> 0.007</font></span><br>
+<span class="color2"><font color="red"> 0.014</font></span><br>
+<span class="color1"><font color="red"> 0.043</font></span><br>
+<span class="color2"><font color="red"> 0.048</font></span><br>
+<span class="color1"><font color="red"> 0.048</font></span><br>
+<span class="color2"><font color="red"> 0.307</font></span><br>
+<span class="color1"><font color="red"> 0.191</font></span><br>
+<span class="color2"><font color="red"> 0.191</font></span><br>
+<span class="color1"><font color="red"> 0.191</font></span><br>
+<span class="color2"><font color="red"> 0.191</font></span><br>
+</small></td>
+<td style=" vertical-align: top; text-align: right; white-space: nowrap;"><small><span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.022</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"><font color="red"> 1.313</font></span><br>
+<span class="color2"><font color="red"> 1.313</font></span><br>
+<span class="color1"><font color="red"> 1.313</font></span><br>
+<span class="color2"><font color="red"> 1.313</font></span><br>
+<span class="color1"><font color="red"> 1.313</font></span><br>
+<span class="color2"><font color="red"> 1.313</font></span><br>
+<span class="color1"><font color="red"> 1.313</font></span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.058</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.560</span><br>
+<span class="color2"> 0.560</span><br>
+<span class="color1"> 0.560</span><br>
+<span class="color2"> 0.560</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.808</span><br>
+<span class="color1"> 0.808</span><br>
+<span class="color2"> 0.808</span><br>
+<span class="color1"> 0.808</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.097</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.615</span><br>
+<span class="color1"> 0.615</span><br>
+<span class="color2"> 0.615</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.035</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.650</span><br>
+<span class="color1"> 0.650</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"><font color="red"> 5.879</font></span><br>
+<span class="color2"><font color="red"> 5.879</font></span><br>
+<span class="color1"><font color="red"> 5.879</font></span><br>
+<span class="color2"><font color="red"> 5.879</font></span><br>
+<span class="color1"><font color="red"> 5.879</font></span><br>
+<span class="color2"><font color="red"> 5.879</font></span><br>
+<span class="color1"><font color="red"> 5.879</font></span><br>
+<span class="color2"><font color="red"> 5.879</font></span><br>
+<span class="color1"><font color="red"> 5.879</font></span><br>
+<span class="color2"><font color="red"> 5.879</font></span><br>
+<span class="color1"><font color="red"> 5.879</font></span><br>
+<span class="color2"><font color="red"> 5.879</font></span><br>
+<span class="color1"><font color="red"> 5.879</font></span><br>
+<span class="color2"><font color="red"> 5.879</font></span><br>
+<span class="color1"><font color="red"> 5.879</font></span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.056</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.518</span><br>
+<span class="color2"> 0.518</span><br>
+<span class="color1"> 0.518</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.065</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.048</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"><font color="red"> 8.351</font></span><br>
+<span class="color2"><font color="red"> 8.351</font></span><br>
+<span class="color1"><font color="red"> 8.351</font></span><br>
+<span class="color2"><font color="red"> 8.351</font></span><br>
+<span class="color1"><font color="red"> 8.351</font></span><br>
+<span class="color2"><font color="red"> 8.351</font></span><br>
+<span class="color1"><font color="red"> 8.351</font></span><br>
+<span class="color2"><font color="red"> 8.351</font></span><br>
+<span class="color1"><font color="red"> 8.351</font></span><br>
+<span class="color2"><font color="red"> 8.351</font></span><br>
+<span class="color1"><font color="red"> 8.351</font></span><br>
+<span class="color2"><font color="red"> 8.351</font></span><br>
+<span class="color1"><font color="red"> 8.351</font></span><br>
+<span class="color2"><font color="red"> 8.351</font></span><br>
+<span class="color1"><font color="red"> 8.351</font></span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"><font color="red"> 1.856</font></span><br>
+<span class="color1"><font color="red"> 1.856</font></span><br>
+<span class="color2"><font color="red"> 1.856</font></span><br>
+<span class="color1"><font color="red"> 1.856</font></span><br>
+<span class="color2"><font color="red"> 1.856</font></span><br>
+<span class="color1"><font color="red"> 1.856</font></span><br>
+<span class="color2"><font color="red"> 1.856</font></span><br>
+<span class="color1"><font color="red"> 1.856</font></span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"><font color="red"> 4.055</font></span><br>
+<span class="color1"><font color="red"> 4.055</font></span><br>
+<span class="color2"><font color="red"> 4.055</font></span><br>
+<span class="color1"><font color="red"> 4.055</font></span><br>
+<span class="color2"><font color="red"> 4.055</font></span><br>
+<span class="color1"><font color="red"> 4.055</font></span><br>
+<span class="color2"><font color="red"> 4.055</font></span><br>
+<span class="color1"><font color="red"> 4.055</font></span><br>
+<span class="color2"><font color="red"> 4.055</font></span><br>
+<span class="color1"><font color="red"> 4.055</font></span><br>
+<span class="color2"><font color="red"> 4.055</font></span><br>
+<span class="color1"><font color="red"> 4.055</font></span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"><font color="red"> 1.431</font></span><br>
+<span class="color2"><font color="red"> 1.431</font></span><br>
+<span class="color1"><font color="red"> 1.431</font></span><br>
+<span class="color2"><font color="red"> 1.431</font></span><br>
+<span class="color1"><font color="red"> 1.431</font></span><br>
+<span class="color2"><font color="red"> 1.431</font></span><br>
+<span class="color1"><font color="red"> 1.431</font></span><br>
+<span class="color2"><font color="red"> 1.431</font></span><br>
+<span class="color1"><font color="red"> 1.431</font></span><br>
+<span class="color2"><font color="red"> 1.431</font></span><br>
+</small></td>
+<td style=" vertical-align: top; text-align: right; white-space: nowrap;"><small><span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"><font color="red"> 0.188</font></span><br>
+<span class="color2"><font color="red"> 0.188</font></span><br>
+<span class="color1"><font color="red"> 0.188</font></span><br>
+<span class="color2"><font color="red"> 0.188</font></span><br>
+<span class="color1"><font color="red"> 0.188</font></span><br>
+<span class="color2"><font color="red"> 0.188</font></span><br>
+<span class="color1"><font color="red"> 0.188</font></span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"><font color="red"> 0.392</font></span><br>
+<span class="color2"><font color="red"> 0.392</font></span><br>
+<span class="color1"><font color="red"> 0.392</font></span><br>
+<span class="color2"><font color="red"> 0.392</font></span><br>
+<span class="color1"><font color="red"> 0.392</font></span><br>
+<span class="color2"><font color="red"> 0.392</font></span><br>
+<span class="color1"><font color="red"> 0.392</font></span><br>
+<span class="color2"><font color="red"> 0.392</font></span><br>
+<span class="color1"><font color="red"> 0.392</font></span><br>
+<span class="color2"><font color="red"> 0.392</font></span><br>
+<span class="color1"><font color="red"> 0.392</font></span><br>
+<span class="color2"><font color="red"> 0.392</font></span><br>
+<span class="color1"><font color="red"> 0.392</font></span><br>
+<span class="color2"><font color="red"> 0.392</font></span><br>
+<span class="color1"><font color="red"> 0.392</font></span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"><font color="red"> 0.557</font></span><br>
+<span class="color2"><font color="red"> 0.557</font></span><br>
+<span class="color1"><font color="red"> 0.557</font></span><br>
+<span class="color2"><font color="red"> 0.557</font></span><br>
+<span class="color1"><font color="red"> 0.557</font></span><br>
+<span class="color2"><font color="red"> 0.557</font></span><br>
+<span class="color1"><font color="red"> 0.557</font></span><br>
+<span class="color2"><font color="red"> 0.557</font></span><br>
+<span class="color1"><font color="red"> 0.557</font></span><br>
+<span class="color2"><font color="red"> 0.557</font></span><br>
+<span class="color1"><font color="red"> 0.557</font></span><br>
+<span class="color2"><font color="red"> 0.557</font></span><br>
+<span class="color1"><font color="red"> 0.557</font></span><br>
+<span class="color2"><font color="red"> 0.557</font></span><br>
+<span class="color1"><font color="red"> 0.557</font></span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"><font color="red"> 0.232</font></span><br>
+<span class="color1"><font color="red"> 0.232</font></span><br>
+<span class="color2"><font color="red"> 0.232</font></span><br>
+<span class="color1"><font color="red"> 0.232</font></span><br>
+<span class="color2"><font color="red"> 0.232</font></span><br>
+<span class="color1"><font color="red"> 0.232</font></span><br>
+<span class="color2"><font color="red"> 0.232</font></span><br>
+<span class="color1"><font color="red"> 0.232</font></span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"><font color="red"> 0.338</font></span><br>
+<span class="color1"><font color="red"> 0.338</font></span><br>
+<span class="color2"><font color="red"> 0.338</font></span><br>
+<span class="color1"><font color="red"> 0.338</font></span><br>
+<span class="color2"><font color="red"> 0.338</font></span><br>
+<span class="color1"><font color="red"> 0.338</font></span><br>
+<span class="color2"><font color="red"> 0.338</font></span><br>
+<span class="color1"><font color="red"> 0.338</font></span><br>
+<span class="color2"><font color="red"> 0.338</font></span><br>
+<span class="color1"><font color="red"> 0.338</font></span><br>
+<span class="color2"><font color="red"> 0.338</font></span><br>
+<span class="color1"><font color="red"> 0.338</font></span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"><font color="red"> 0.143</font></span><br>
+<span class="color2"><font color="red"> 0.143</font></span><br>
+<span class="color1"><font color="red"> 0.143</font></span><br>
+<span class="color2"><font color="red"> 0.143</font></span><br>
+<span class="color1"><font color="red"> 0.143</font></span><br>
+<span class="color2"><font color="red"> 0.143</font></span><br>
+<span class="color1"><font color="red"> 0.143</font></span><br>
+<span class="color2"><font color="red"> 0.143</font></span><br>
+<span class="color1"><font color="red"> 0.143</font></span><br>
+<span class="color2"><font color="red"> 0.143</font></span><br>
+</small></td>
+<td style=" vertical-align: top; text-align: right; white-space: nowrap;"><small><span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.002</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"><font color="red"> 0.168</font></span><br>
+<span class="color2"><font color="red"> 0.168</font></span><br>
+<span class="color1"><font color="red"> 0.168</font></span><br>
+<span class="color2"><font color="red"> 0.168</font></span><br>
+<span class="color1"><font color="red"> 0.168</font></span><br>
+<span class="color2"><font color="red"> 0.168</font></span><br>
+<span class="color1"><font color="red"> 0.168</font></span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.038</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.120</span><br>
+<span class="color2"> 0.120</span><br>
+<span class="color1"> 0.120</span><br>
+<span class="color2"> 0.120</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.182</span><br>
+<span class="color1"> 0.182</span><br>
+<span class="color2"> 0.182</span><br>
+<span class="color1"> 0.182</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.077</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.185</span><br>
+<span class="color1"> 0.185</span><br>
+<span class="color2"> 0.185</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.015</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.305</span><br>
+<span class="color1"> 0.305</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"><font color="red"> 0.372</font></span><br>
+<span class="color2"><font color="red"> 0.372</font></span><br>
+<span class="color1"><font color="red"> 0.372</font></span><br>
+<span class="color2"><font color="red"> 0.372</font></span><br>
+<span class="color1"><font color="red"> 0.372</font></span><br>
+<span class="color2"><font color="red"> 0.372</font></span><br>
+<span class="color1"><font color="red"> 0.372</font></span><br>
+<span class="color2"><font color="red"> 0.372</font></span><br>
+<span class="color1"><font color="red"> 0.372</font></span><br>
+<span class="color2"><font color="red"> 0.372</font></span><br>
+<span class="color1"><font color="red"> 0.372</font></span><br>
+<span class="color2"><font color="red"> 0.372</font></span><br>
+<span class="color1"><font color="red"> 0.372</font></span><br>
+<span class="color2"><font color="red"> 0.372</font></span><br>
+<span class="color1"><font color="red"> 0.372</font></span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.036</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.153</span><br>
+<span class="color2"> 0.153</span><br>
+<span class="color1"> 0.153</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.045</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.028</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"><font color="red"> 0.537</font></span><br>
+<span class="color2"><font color="red"> 0.537</font></span><br>
+<span class="color1"><font color="red"> 0.537</font></span><br>
+<span class="color2"><font color="red"> 0.537</font></span><br>
+<span class="color1"><font color="red"> 0.537</font></span><br>
+<span class="color2"><font color="red"> 0.537</font></span><br>
+<span class="color1"><font color="red"> 0.537</font></span><br>
+<span class="color2"><font color="red"> 0.537</font></span><br>
+<span class="color1"><font color="red"> 0.537</font></span><br>
+<span class="color2"><font color="red"> 0.537</font></span><br>
+<span class="color1"><font color="red"> 0.537</font></span><br>
+<span class="color2"><font color="red"> 0.537</font></span><br>
+<span class="color1"><font color="red"> 0.537</font></span><br>
+<span class="color2"><font color="red"> 0.537</font></span><br>
+<span class="color1"><font color="red"> 0.537</font></span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"><font color="red"> 0.212</font></span><br>
+<span class="color1"><font color="red"> 0.212</font></span><br>
+<span class="color2"><font color="red"> 0.212</font></span><br>
+<span class="color1"><font color="red"> 0.212</font></span><br>
+<span class="color2"><font color="red"> 0.212</font></span><br>
+<span class="color1"><font color="red"> 0.212</font></span><br>
+<span class="color2"><font color="red"> 0.212</font></span><br>
+<span class="color1"><font color="red"> 0.212</font></span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"><font color="red"> 0.318</font></span><br>
+<span class="color1"><font color="red"> 0.318</font></span><br>
+<span class="color2"><font color="red"> 0.318</font></span><br>
+<span class="color1"><font color="red"> 0.318</font></span><br>
+<span class="color2"><font color="red"> 0.318</font></span><br>
+<span class="color1"><font color="red"> 0.318</font></span><br>
+<span class="color2"><font color="red"> 0.318</font></span><br>
+<span class="color1"><font color="red"> 0.318</font></span><br>
+<span class="color2"><font color="red"> 0.318</font></span><br>
+<span class="color1"><font color="red"> 0.318</font></span><br>
+<span class="color2"><font color="red"> 0.318</font></span><br>
+<span class="color1"><font color="red"> 0.318</font></span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"> 0.000</span><br>
+<span class="color2"> 0.000</span><br>
+<span class="color1"><font color="red"> 0.123</font></span><br>
+<span class="color2"><font color="red"> 0.123</font></span><br>
+<span class="color1"><font color="red"> 0.123</font></span><br>
+<span class="color2"><font color="red"> 0.123</font></span><br>
+<span class="color1"><font color="red"> 0.123</font></span><br>
+<span class="color2"><font color="red"> 0.123</font></span><br>
+<span class="color1"><font color="red"> 0.123</font></span><br>
+<span class="color2"><font color="red"> 0.123</font></span><br>
+<span class="color1"><font color="red"> 0.123</font></span><br>
+<span class="color2"><font color="red"> 0.123</font></span><br>
+</small></td>
+<td style="width: 50px; vertical-align: top; text-align: right;"><small>&nbsp;&nbsp;</small></td>
+</tr>
+</tbody>
+</table></td><td style="vertical-align: top;">
+<table border="0">
+<tbody>
+<tr>
+<td style="text-align: center;white-space: nowrap; height: 27px;vertical-align: top;" colspan="5" rowspan="1">
+Average over all sequences<br>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; height: 45px;" colspan="5" rowspan="1"><a href="http://bioinf.uab.es/aap/1654195506/aap_1654195506.txt.xls"><img alt="Exel file with all sequence data" src="http://bioinf.uab.es/aap/imatges/logo_excel.png"></a>
+
+</td>
+</tr><tr>
+<td style="text-align: center; height: 27px;" colspan="5" rowspan="1">-0.037<br>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; height: 27px;" colspan="5" rowspan="1"> 6.000<br>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; height: 27px;" colspan="5" rowspan="1"> 3.315<br>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; height: 27px;" colspan="5" rowspan="1">26.418<br>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; height: 27px;" colspan="5" rowspan="1">22.886<br>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; height: 27px;" colspan="5" rowspan="1">-4.511<br>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; height: 27px;" colspan="5" rowspan="1"> 0.146<br>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; height: 27px;" colspan="5" rowspan="1"> 0.126<br>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; height: 27px;" colspan="5" rowspan="1">-4.600<br>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;white-space: nowrap; height: 27px;" colspan="5" rowspan="1">
+<span class="color1"><smal><small> Sorted by Na4vSS</small></smal></span><br>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;white-space: nowrap; height: 27px;" colspan="5" rowspan="1">
+GQ67_00001&nbsp;&nbsp;&nbsp; -4.60
+<br>
+</td>
+</tr>
+
+</tbody>
+</table>
+
+<p>
+
+</p></td></tr></tbody></table></body></html>
