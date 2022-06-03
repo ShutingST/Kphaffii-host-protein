@@ -1,0 +1,57 @@
+Molecular weight
+Number of codon(s)
+Bulkiness
+Polarity / Zimmerman
+Polarity / Grantham
+Refractivity
+Recognition factors
+Hphob. / Eisenberg et al.
+Hphob. OMH / Sweet et al.
+Hphob. / Hopp & Woods
+Hphob. / Kyte & Doolittle
+Hphob. / Manavalan et al.
+Hphob. / Abraham & Leo
+Hphob. / Black
+Hphob. / Bull & Breese
+Hphob. / Fauchere et al.
+Hphob. / Guy
+Hphob. / Janin
+Hphob. / Miyazawa et al.
+Hphob. / Rao & Argos
+Hphob. / Roseman
+Hphob. / Tanford
+Hphob. / Wolfenden et al.
+Hphob. / Welling & al
+Hphob. HPLC / Wilson & al
+Hphob. HPLC / Parker & al
+Hphob. HPLC pH3.4 / Cowan
+Hphob. HPLC pH7.5 / Cowan
+Hphob. / Rf mobility
+HPLC / HFBA retention
+HPLC / TFA retention
+Transmembrane tendency
+HPLC / retention pH 2.1
+HPLC / retention pH 7.4
+% buried residues
+% accessible residues
+Hphob. / Chothia
+Hphob. / Rose & al
+Ratio hetero end/side
+Average area buried
+Average flexibility
+alpha-helix / Chou & Fasman
+beta-sheet / Chou & Fasman
+beta-turn / Chou & Fasman
+alpha-helix / Deleage & Roux
+beta-sheet / Deleage & Roux
+beta-turn / Deleage & Roux
+Coil / Deleage & Roux
+alpha-helix / Levitt
+beta-sheet / Levitt
+beta-turn / Levitt
+Total beta-strand
+Antiparallel beta-strand
+Parallel beta-strand
+A.A. composition
+A.A. comp. in Swiss-Prot
+Relative mutability
