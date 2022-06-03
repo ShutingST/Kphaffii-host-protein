@@ -25,7 +25,9 @@ def main():
 
         if fasta_name+".xls" in output_files:
             continue
-
+        if fasta_file.endswith("prot"):
+            continue
+        
         file_dir = os.path.join(fasta_dir,fasta_file)
         fasta_handle = open(file_dir,"r")
         file_content = fasta_handle.read()
